@@ -39,7 +39,7 @@ public class StudentDao {
 		Student student= this.hibernateTemplate.get(Student.class, studentId);
 		this.hibernateTemplate.delete(student);
 	}
-	
+	 
 	//updating data
 	@Transactional
 	public void updateStudent(Student student) {
